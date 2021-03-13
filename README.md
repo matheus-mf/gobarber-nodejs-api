@@ -30,11 +30,15 @@ Data Transfer Object (**DTO**) ou simplesmente Transfer Object é um padrão de 
 de dados entre diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou
 diferentes sistemas via serialização.
 
+![DTO](.github/dto.png)
+
 ---
 
 ### Rotas
 
 Deve receber uma requisição, chama outro arquivo e devolver uma resposta.
+
+![Rota Post](.github/rotas.png)
 
 ---
 
@@ -45,4 +49,6 @@ Deve receber uma requisição, chama outro arquivo e devolver uma resposta.
 - Não tem acesso ao `request` e `response` das rotas;
 - **Dependency Inversion**: Quando precisar usar dependências externas, em vez de criar uma nova instância, ela deve ser
   passada como um parâmetro do construtor de serviço.
+
+![Regra de Negocio](.github/regra-negocio.png)
   
