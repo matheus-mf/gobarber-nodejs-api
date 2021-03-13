@@ -6,3 +6,18 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [date-fns](https://date-fns.org/)
 
+## Estrutura
+
+### Modelos
+
+Representa a estrutura dos dados.
+
+![Appointment Model](.github/appointment-model.png)
+
+### Repositórios
+
+É a conexão entre a persistência de dados e as rotas.
+
+![Appointment repository](.github/appointments-repository.png)
+
+
