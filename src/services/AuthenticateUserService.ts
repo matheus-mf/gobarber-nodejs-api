@@ -2,6 +2,7 @@ import { getCustomRepository } from 'typeorm';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 
+import authConfig from '../config/auth';
 import UsersRepository from '../repositories/UsersRepository';
 import User from '../models/User';
 
@@ -33,10 +34,11 @@ class AuthenticateUserService {
       throw new Error('Incorrect email/password combination!');
     }
 
-    // TODO: Move secret key for ENV
-    const token = sign({}, '2949b2c6a4654f0043cb0fdf709922f7', {
+    const { secret, expiresIn } = authConfig.jwt;
+
+    const token = sign({}, secret, {
       subject: user.id,
-      expiresIn: '1d',
+      expiresIn,
     });
 
     return {
