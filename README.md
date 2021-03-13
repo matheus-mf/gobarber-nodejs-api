@@ -1,4 +1,4 @@
-<h1 align="center">API Node.js com TypeScript</h1>
+<h1 align="center">Api Node.js com TypeScript do GoBarber</h1>
 
 <h2>Tecnologias</h2>
 
