@@ -5,6 +5,15 @@
 - [Express](https://expressjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [date-fns](https://date-fns.org/)
+- [TypeORM](https://typeorm.io/)
+- [docker](https://www.docker.com/)
+
+## Docker
+
+### Postgres
+```
+docker run --name gobarber_db -e POSTGRES_PASSWORD=docker -e POSTGRES_USER=docker -p 5432:5432 -d postgres
+```
 
 ## Estrutura
 

@@ -3,5 +3,8 @@
 /node_modules
 /dist
 
+# Configs
+ormconfig.json
+
 # Yarn
 yarn-*.log
