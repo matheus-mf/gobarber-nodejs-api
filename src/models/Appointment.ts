@@ -3,13 +3,13 @@ import { v4 as uuid } from 'uuid';
 class Appointment {
   id: string;
 
-  provide: string;
+  provider: string;
 
   date: Date;
 
-  constructor(provide: string, date: Date) {
+  constructor({ provider, date }: Omit<Appointment, 'id'>) {
     this.id = uuid();
-    this.provide = provide;
+    this.provider = provider;
     this.date = date;
   }
 }

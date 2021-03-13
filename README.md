@@ -20,4 +20,12 @@ Representa a estrutura dos dados.
 
 ![Appointment repository](.github/appointments-repository.png)
 
+### DTO
+
+Data Transfer Object (**DTO**) ou simplesmente Transfer Object é um padrão de projetos bastante usado para o transporte
+de dados entre diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou
+diferentes sistemas via serialização.
+
+
+
 
