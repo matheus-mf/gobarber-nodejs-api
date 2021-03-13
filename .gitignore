@@ -1,3 +1,7 @@
+# Directory
 /.idea
 /node_modules
 /dist
+
+# Yarn
+yarn-*.log
