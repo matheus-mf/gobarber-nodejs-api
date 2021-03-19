@@ -17,6 +17,13 @@
 docker run --name gobarber_db -e POSTGRES_PASSWORD=docker -e POSTGRES_USER=docker -p 5432:5432 -d postgres
 ```
 
+## Metodologia
+
+### DDD
+
+[Domain-Driven Design](https://medium.com/spotlight-on-javascript/domain-driven-design-for-javascript-developers-9fc3f681931a)
+
+
 ## Estrutura
 
 ### Modelos

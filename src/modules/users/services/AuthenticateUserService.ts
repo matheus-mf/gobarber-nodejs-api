@@ -1,12 +1,10 @@
-import { getCustomRepository } from 'typeorm';
+import { getRepository } from 'typeorm';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
+import authConfig from '@config/auth';
 
-import AppError from '../errors/AppError';
-
-import authConfig from '../config/auth';
-import UsersRepository from '../repositories/UsersRepository';
-import User from '../models/User';
+import AppError from '@shared/errors/AppError';
+import User from '../infra/typeorm/entities/User';
 
 interface Request {
   email: string;
@@ -20,7 +18,7 @@ interface Response {
 
 class AuthenticateUserService {
   public async execute({ email, password }: Request): Promise<Response> {
-    const usersRepository = getCustomRepository(UsersRepository);
+    const usersRepository = getRepository(User);
 
     const user = await usersRepository.findOne({
       where: { email },

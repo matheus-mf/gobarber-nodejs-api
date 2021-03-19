@@ -1,10 +1,9 @@
-import { getCustomRepository } from 'typeorm';
+import { getRepository } from 'typeorm';
 import { hash } from 'bcryptjs';
 
-import AppError from '../errors/AppError';
+import AppError from '@shared/errors/AppError';
 
-import User from '../models/User';
-import UsersRepository from '../repositories/UsersRepository';
+import User from '../infra/typeorm/entities/User';
 
 interface Request {
   name: string;
@@ -14,7 +13,7 @@ interface Request {
 
 class CreateUserService {
   public async execute({ name, email, password }: Request): Promise<User> {
-    const usersRepository = getCustomRepository(UsersRepository);
+    const usersRepository = getRepository(User);
 
     const checkUserExists = await usersRepository.findOne({
       where: { email },
