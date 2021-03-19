@@ -2,6 +2,7 @@
 
 <h2>Tecnologias</h2>
 
+- [ESLint e Prettier](https://www.notion.so/ESLint-e-Prettier-Trilha-Node-js-d3f3ef576e7f45dfbbde5c25fa662779)
 - [Express](https://expressjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [date-fns](https://date-fns.org/)
@@ -69,4 +70,4 @@ Deve receber uma requisição, chama outro arquivo e devolver uma resposta.
   passada como um parâmetro do construtor de serviço.
 
 ![Regra de Negocio](.github/regra-negocio.png)
-  
+
