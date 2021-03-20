@@ -5,6 +5,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
+    "strictNullChecks": false,
     "strictPropertyInitialization": false,
     "baseUrl": "./src",
     "allowJs": true,

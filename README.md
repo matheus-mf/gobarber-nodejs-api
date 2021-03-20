@@ -9,6 +9,7 @@
 - [TypeORM](https://typeorm.io/)
 - [docker](https://www.docker.com/)
 - [JWT](https://jwt.io/)
+- [TSyringe](https://github.com/microsoft/tsyringe)
 
 ## Docker
 
@@ -24,6 +25,9 @@ docker run --name gobarber_db -e POSTGRES_PASSWORD=docker -e POSTGRES_USER=docke
 
 [Domain-Driven Design](https://medium.com/spotlight-on-javascript/domain-driven-design-for-javascript-developers-9fc3f681931a)
 
+### SOLID
+
+[O que é SOLID: O guia completo para você entender os 5 princípios da POO](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
 
 ## Estrutura
 
