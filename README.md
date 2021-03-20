@@ -10,6 +10,7 @@
 - [docker](https://www.docker.com/)
 - [JWT](https://jwt.io/)
 - [TSyringe](https://github.com/microsoft/tsyringe)
+- [jestjs](https://jestjs.io/)
 
 ## Docker
 
