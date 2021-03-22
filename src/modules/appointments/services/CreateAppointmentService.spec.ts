@@ -6,11 +6,11 @@ import CreateAppointmentService from './CreateAppointmentService';
 describe('CreateAppointment', () => {
   it('should be able to create a new appointment', async () => {
     const fakeAppointmentsRepository = new FakeAppointmentsRepository();
-    const createAppointmentService = new CreateAppointmentService(
+    const createAppointment = new CreateAppointmentService(
       fakeAppointmentsRepository,
     );
 
-    const appointment = await createAppointmentService.execute({
+    const appointment = await createAppointment.execute({
       provider_id: '123123',
       date: new Date(),
     });
@@ -21,17 +21,17 @@ describe('CreateAppointment', () => {
 
   it('should not be able to create a new appointments on the same time', async () => {
     const fakeAppointmentsRepository = new FakeAppointmentsRepository();
-    const createAppointmentService = new CreateAppointmentService(
+    const createAppointment = new CreateAppointmentService(
       fakeAppointmentsRepository,
     );
     const appointmentData = new Date(2022, 10, 2);
-    await createAppointmentService.execute({
+    await createAppointment.execute({
       date: appointmentData,
       provider_id: '123123',
     });
 
     await expect(
-      createAppointmentService.execute({
+      createAppointment.execute({
         date: appointmentData,
         provider_id: '123123',
       }),
