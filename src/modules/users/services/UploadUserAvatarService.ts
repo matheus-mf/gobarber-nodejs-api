@@ -1,7 +1,4 @@
-import uploadConfig from '@config/upload';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
-import fs from 'fs';
-import path from 'path';
 import { inject, injectable } from 'tsyringe';
 
 import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';

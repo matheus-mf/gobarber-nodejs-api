@@ -1,6 +1,6 @@
 <h1 align="center">Api Node.js com TypeScript do GoBarber</h1>
 
-<h2>Tecnologias</h2>
+## Tecnologias
 
 - [ESLint e Prettier](https://www.notion.so/ESLint-e-Prettier-Trilha-Node-js-d3f3ef576e7f45dfbbde5c25fa662779)
 - [Express](https://expressjs.com/)
