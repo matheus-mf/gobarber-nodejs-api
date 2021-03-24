@@ -27,12 +27,12 @@ export default class CreateUsers1615667169201 implements MigrationInterface {
             type: 'varchar',
           },
           {
-            name: 'crated_at',
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },
           {
-            name: 'update_at',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },
