@@ -26,7 +26,7 @@
 #### RF
 
 - [x] O usuário deve poder recuperar a sua senha informando o seu e-mail;
-- [ ] O usuário deve receber um e-mail com instruções de recuperação de senha;
+- [x] O usuário deve receber um e-mail com instruções de recuperação de senha;
 - [x] O usuário deve poder resetar a sua senha.
 
 #### RNF
