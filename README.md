@@ -24,19 +24,19 @@
 
 #### RF
 
-- [ ] O usuário deve poder recuperar a sua senha informando o seu e-mail;
+- [x] O usuário deve poder recuperar a sua senha informando o seu e-mail;
 - [ ] O usuário deve receber um e-mail com instruções de recuperação de senha;
-- [ ] O usuário deve poder resetar a sua senha.
+- [x] O usuário deve poder resetar a sua senha.
 
 #### RNF
 
-- [ ] Utilizar Mailtrap para testar envios em ambiente de desenvolvimento;
+- [x] Utilizar Ethereal para testar envios em ambiente de desenvolvimento;
 - [ ] Utilizar Amazon SES para envios em ambiente de produção;
 - [ ] O envia de e-mail deve acontecer em segundo plano (_background job_);
 
 #### RN
 
-- [ ] O link enviado por email para resetar a senha, deve expirar em 2h;
+- [x] O token enviado por email para resetar a senha, deve expirar em 2h;
 - [ ] O usuário confirma a nova senha ao registrá-la;
 
 ### Atualização do perfil
