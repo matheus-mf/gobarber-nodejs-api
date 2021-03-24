@@ -74,7 +74,7 @@
 
 #### RF
 
-- [ ] O usuário deve ser capaz de listar todos os provedores de serviços registrados;
+- [x] O usuário deve ser capaz de listar todos os provedores de serviços registrados;
 - [ ] O usuário deve ser capaz de listar os dias de um mês com pelo menos um tempo disponível de um provedor;
 - [ ] O usuário deve ser capaz de listar os horários disponíveis num dia específico de um provedor;
 = [ ] O usuário deve ser capaz de realizar um novo agendamento com um prestador.
