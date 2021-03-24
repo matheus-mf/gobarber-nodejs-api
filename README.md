@@ -44,12 +44,12 @@
 
 #### RF
 
-- [ ] O usuário deve poder atualizar o seu nome, email e senha.
+- [x] O usuário deve poder atualizar o seu nome, email e senha.
 
 #### RN
 
-- [ ] O usuário não pode alterar o e-mail para um que esteja em uso;
-- [ ] Para atualizar a senha é necessário informar a senha antiga;
+- [x] O usuário não pode alterar o e-mail para um que esteja em uso;
+- [x] Para atualizar a senha é necessário informar a senha antiga;
 - [ ] Para atualizar a senha é necessário confirmar a nova senha.
 
 ### Painel do prestador
