@@ -1,6 +1,7 @@
 import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointmentDTO';
+import IFindAllInMonthFromProviderDTO from '@modules/appointments/dtos/IFindAllInMonthFromProviderDTO';
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
-import { getRepository, Repository } from 'typeorm';
+import { getRepository, Repository, Raw } from 'typeorm';
 
 import Appointment from '../entities/Appointment';
 
@@ -14,6 +15,23 @@ class AppointmentsRepository implements IAppointmentsRepository {
   public async findByDate(date: Date): Promise<Appointment | undefined> {
     return this.omrRepository.findOne({
       where: { date },
+    });
+  }
+
+  public async findAllInMonthFromProvider({
+    provider_id,
+    month,
+    year,
+  }: IFindAllInMonthFromProviderDTO): Promise<Appointment[]> {
+    const parsedMonth = String(month).padStart(2, '0');
+    return this.omrRepository.find({
+      where: {
+        provider_id,
+        date: Raw(
+          dateFielName =>
+            `to_char(${dateFielName}, MM-YYYY) = '${parsedMonth}-${year}'`,
+        ),
+      },
     });
   }
 
