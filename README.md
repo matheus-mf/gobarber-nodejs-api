@@ -13,6 +13,7 @@
 - [jestjs](https://jestjs.io/)
 - [Handlebars](https://handlebarsjs.com/)
 - [Celebrate](https://github.com/arb/celebrate)
+- [Class Transformer](https://github.com/typestack/class-transformer)
 
 ---
 

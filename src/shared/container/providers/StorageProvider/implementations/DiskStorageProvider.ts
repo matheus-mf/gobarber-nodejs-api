@@ -4,12 +4,13 @@ import path from 'path';
 
 import IStorageProvider from '../models/IStorageProvider';
 
-export default class DiskStorageProvider implements IStorageProvider {
+class DiskStorageProvider implements IStorageProvider {
   public async saveFile(file: string): Promise<string> {
     await fs.promises.rename(
       path.resolve(uploadConfig.tmpFolder, file),
       path.resolve(uploadConfig.uploadsFolder, file),
     );
+
     return file;
   }
 
@@ -25,3 +26,5 @@ export default class DiskStorageProvider implements IStorageProvider {
     await fs.promises.unlink(filePath);
   }
 }
+
+export default DiskStorageProvider;

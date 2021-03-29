@@ -1,10 +1,10 @@
-import IUsersRepository from '@modules/users/repositories/IUsersRepository';
-import { inject, injectable } from 'tsyringe';
+import { injectable, inject } from 'tsyringe';
 
 import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';
 import AppError from '@shared/errors/AppError';
 
 import User from '../infra/typeorm/entities/User';
+import IUsersRepository from '../repositories/IUsersRepository';
 
 interface IRequest {
   user_id: string;

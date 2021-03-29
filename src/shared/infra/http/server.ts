@@ -1,4 +1,5 @@
 import 'reflect-metadata';
+import 'dotenv/config';
 
 import uploadConfig from '@config/upload';
 import { errors } from 'celebrate';
@@ -18,7 +19,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/files', express.static(uploadConfig.tmpFolder));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(router);
 
 app.use(errors());
