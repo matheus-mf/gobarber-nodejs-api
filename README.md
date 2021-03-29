@@ -12,6 +12,7 @@
 - [TSyringe](https://github.com/microsoft/tsyringe)
 - [jestjs](https://jestjs.io/)
 - [Handlebars](https://handlebarsjs.com/)
+- [Celebrate](https://github.com/arb/celebrate)
 
 ---
 
