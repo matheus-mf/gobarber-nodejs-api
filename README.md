@@ -77,7 +77,7 @@
 - [x] O usuário deve ser capaz de listar todos os provedores de serviços registrados;
 - [ ] O usuário deve ser capaz de listar os dias de um mês com pelo menos um tempo disponível de um provedor;
 - [ ] O usuário deve ser capaz de listar os horários disponíveis num dia específico de um provedor;
-= [ ] O usuário deve ser capaz de realizar um novo agendamento com um prestador.
+- [ ] O usuário deve ser capaz de realizar um novo agendamento com um prestador.
 
 #### RNF
 
@@ -87,9 +87,9 @@
 
 - [x] Cada agendamento deve durar 1h exatamente;
 - [x] O usuário não pode agendar num horário já ocupado;
-- [ ] Os agendamentos devem estar disponíveis entre 8h e 18h (Primeiro às 8h, último às 17h);
-- [ ] O usuário não pode agendar num horário que já passou;
-- [ ] O usuário não pode agendar serviços consigo mesmo;
+- [x] Os agendamentos devem estar disponíveis entre 8h e 18h (Primeiro às 8h, último às 17h);
+- [x] O usuário não pode agendar num horário que já passou;
+- [x] O usuário não pode agendar serviços consigo mesmo;
 
 ---
 
