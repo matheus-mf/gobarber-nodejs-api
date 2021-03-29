@@ -101,6 +101,13 @@
 docker run --name gobarber_db -e POSTGRES_PASSWORD=docker -e POSTGRES_USER=docker -p 5432:5432 -d postgres
 ```
 
+### MongoDB
+
+```
+docker run --name mongo_db -p 27017:27017 -d -t mongo
+```
+
+
 ---
 
 ## Metodologia
