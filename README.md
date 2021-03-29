@@ -85,9 +85,9 @@
 
 #### RN
 
-- [ ] Cada agendamento deve durar 1h exatamente;
+- [x] Cada agendamento deve durar 1h exatamente;
+- [x] O usuário não pode agendar num horário já ocupado;
 - [ ] Os agendamentos devem estar disponíveis entre 8h e 18h (Primeiro às 8h, último às 17h);
-- [ ] O usuário não pode agendar num horário já ocupado;
 - [ ] O usuário não pode agendar num horário que já passou;
 - [ ] O usuário não pode agendar serviços consigo mesmo;
 
