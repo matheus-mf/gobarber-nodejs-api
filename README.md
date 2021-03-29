@@ -56,7 +56,7 @@
 
 #### RF
 
-- [ ] O usuário deve ser capaz de listar os seus agendamentos de um dia específico;
+- [x] O usuário deve ser capaz de listar os seus agendamentos de um dia específico;
 - [ ] O prestador deve receber uma notificação sempre que houver um novo agendamento;
 - [ ] O provedor deve ser capaz de ver notificações não lidas.
 
