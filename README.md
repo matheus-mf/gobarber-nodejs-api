@@ -34,13 +34,13 @@
 #### RNF
 
 - [x] Utilizar Ethereal para testar envios em ambiente de desenvolvimento;
-- [ ] Utilizar Amazon SES para envios em ambiente de produção;
+- [x] Utilizar Amazon SES para envios em ambiente de produção;
 - [ ] O envia de e-mail deve acontecer em segundo plano (_background job_);
 
 #### RN
 
 - [x] O token enviado por email para resetar a senha, deve expirar em 2h;
-- [ ] O usuário confirma a nova senha ao registrá-la;
+- [x] O usuário confirma a nova senha ao registrá-la;
 
 ### Atualização do perfil
 
@@ -52,7 +52,7 @@
 
 - [x] O usuário não pode alterar o e-mail para um que esteja em uso;
 - [x] Para atualizar a senha é necessário informar a senha antiga;
-- [ ] Para atualizar a senha é necessário confirmar a nova senha.
+- [x] Para atualizar a senha é necessário confirmar a nova senha.
 
 ### Painel do prestador
 
@@ -65,12 +65,12 @@
 #### RNF
 
 - [ ] Os agendamentos do prestador no dia devem ser armazenadas em cache;
-- [ ] As notificações do prestador devem ser armazenadas no MongoDB;
+- [x] As notificações do prestador devem ser armazenadas no MongoDB;
 - [ ] As notificações do prestador devem ser enviadas em tempo-real utilizando Socket.oi.
 
 #### RN
 
-- [ ] A notificação deve ter o status de lida ou não-lida para que o prestador possa controlar.
+- [x] A notificação deve ter o status de lida ou não-lida para que o prestador possa controlar.
 
 ### Agendamento de serviços
 
