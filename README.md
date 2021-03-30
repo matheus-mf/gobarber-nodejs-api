@@ -14,6 +14,7 @@
 - [Handlebars](https://handlebarsjs.com/)
 - [Celebrate](https://github.com/arb/celebrate)
 - [Class Transformer](https://github.com/typestack/class-transformer)
+- [IORedis](https://github.com/luin/ioredis)
 
 ---
 
@@ -109,6 +110,11 @@ docker run --name gobarber_db -e POSTGRES_PASSWORD=docker -e POSTGRES_USER=docke
 docker run --name mongo_db -p 27017:27017 -d -t mongo
 ```
 
+### Redis
+
+```
+docker run --name redis -p 6379:6379 -d -t redis:alpine
+```
 
 ---
 
