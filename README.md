@@ -15,6 +15,7 @@
 - [Celebrate](https://github.com/arb/celebrate)
 - [Class Transformer](https://github.com/typestack/class-transformer)
 - [IORedis](https://github.com/luin/ioredis)
+- [node-rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible)
 
 ---
 
