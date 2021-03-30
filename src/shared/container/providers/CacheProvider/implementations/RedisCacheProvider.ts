@@ -14,7 +14,7 @@ export default class RedisCacheProvider implements ICacheProvider {
     await this.client.set(key, JSON.stringify(value));
   }
 
-  private async recover<T>(key: string): Promise<T | null> {
+  public async recover<T>(key: string): Promise<T | null> {
     const data = await this.client.get(key);
 
     if (!data) {
@@ -24,7 +24,19 @@ export default class RedisCacheProvider implements ICacheProvider {
     return JSON.parse(data) as T;
   }
 
-  private async invalidate(key: string): Promise<void> {
-    return Promise.resolve(undefined);
+  public async invalidate(key: string): Promise<void> {
+    await this.client.del(key);
+  }
+
+  public async invalidatePrefix(prefix: string): Promise<void> {
+    const keys = await this.client.keys(`${prefix}:*`);
+
+    const pipeline = this.client.pipeline();
+
+    keys.forEach(key => {
+      pipeline.del(key);
+    });
+
+    await pipeline.exec();
   }
 }

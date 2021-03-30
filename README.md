@@ -84,7 +84,7 @@
 
 #### RNF
 
-- [ ] A listagem de prestadores deve ser armazenada em cache.
+- [x] A listagem de prestadores deve ser armazenada em cache.
 
 #### RN
 
