@@ -47,7 +47,7 @@ jobs:
         source: ".,!node_modules"
         target: "~/app/gobarber-nodejs-api"
       
-    # Install dependencies on Digital Ocean  
+    # Run production scripts
     - name: Run production scripts
       uses: appleboy/ssh-action@master
       with:
