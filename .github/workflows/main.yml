@@ -15,6 +15,18 @@ jobs:
       uses: actions/setup-node@v2.1.5
       with:
         node-version: 14.x
+        
+    - name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - uses: actions/cache@v2
+      id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      with:
+        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
 
     # Install dependencies NPM/YARN
     - name: Install dependencies
@@ -37,7 +49,7 @@ jobs:
       
     # Install dependencies on Digital Ocean  
     - name: Install dependencies on Digital Ocean
-      uses: appleboy/scp-action@master
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
@@ -49,7 +61,7 @@ jobs:
       
     # Run migrations on Digital Ocean
     - name: Run migrations on Digital Ocean
-      uses: appleboy/scp-action@master
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
@@ -61,11 +73,10 @@ jobs:
       
     # Restart project on Digital Ocean
     - name: Restart project on Digital Ocean
-      uses: appleboy/scp-action@master
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
         port: ${{ secrets.SSH_PORT }}
         key: ${{ secrets.SSH_KEY }}
-        script: pm2 restart gobarber-api
-        
+        script: pm2 restart gobarber-api        
